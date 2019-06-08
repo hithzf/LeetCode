@@ -25,7 +25,7 @@ public class MaximumSubarray {
 
 	public static void main(String[] args) {
 		MaximumSubarray max = new MaximumSubarray();
-		int[] testArray = {};
+		int[] testArray = {7, 6, 5, 4, -1, -2, 9, -7, 8};
 		System.out.println(max.maxSubArray(testArray));
 	}
 
