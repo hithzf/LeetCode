@@ -59,4 +59,9 @@ public class ValidateBinarySearchTree {
 		TreeNode right;
 		TreeNode(int x) { val = x; }
 	}
+	
+	public static void main(String[] args) {
+		ValidateBinarySearchTree tree = new ValidateBinarySearchTree();
+		TreeNode node = tree.new TreeNode(0);
+	}
 }
