@@ -1,5 +1,8 @@
 package greedy;
 
+import java.util.regex.Matcher;
+import java.util.regex.Pattern;
+
 /**
  * 44. Wildcard Matching
  * @author hzf
@@ -67,8 +70,12 @@ public class WildcardMatching {
 	}
 
 	public static void main(String[] args) {
-		WildcardMatching solution = new WildcardMatching();
-		System.out.println(solution.isMatch("c", "*?*"));
+		String str = "北京市(朝阳区)(西城区)(海淀区)";
+        Pattern p = Pattern.compile(".*?(?=\\()");
+        Matcher m = p.matcher(str);
+        if(m.find()) {
+            System.out.println(m.group());
+        }
 	}
 
 }
